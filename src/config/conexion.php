@@ -1,9 +1,9 @@
 <?php
-require 'vendor/autoload.php';
+require_once __DIR__ . '/../../vendor/autoload.php';
 
 use Dotenv\Dotenv;
 
-$dotenv = Dotenv::createImmutable(__DIR__);
+$dotenv = Dotenv::createImmutable(__DIR__ . '/../../');
 $dotenv->load();
 
 class Database {
@@ -11,7 +11,6 @@ class Database {
     private $db;
     private $user;
     private $pass;
-    private $charset;
     public $pdo;
 
     public function __construct() {

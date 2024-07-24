@@ -29,7 +29,7 @@
     </nav>
     <div class="center">
     <?php
-        include 'consultar.php';
+        require_once(__DIR__ . '/../src/crud/consultar.php');
         generarTablaUsuarios();
     ?>
     </div>

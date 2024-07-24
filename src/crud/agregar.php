@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php';
+require './src/config/conexion.php';
 
 function createUser($nombre, $ap_paterno, $ap_materno, $correo, $activo) {
     $db = new Database();

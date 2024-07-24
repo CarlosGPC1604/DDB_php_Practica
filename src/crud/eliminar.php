@@ -1,5 +1,5 @@
 <?php
-require 'conexion.php';
+require './src/config/conexion.php';
 
 function eliminarUsuario($id) {
     $db = new Database();
