@@ -1,0 +1,9 @@
+# Excluir archivo de variables de entorno
+.env
+
+# Excluir directorios de dependencias de Composer y Node.js
+/vendor
+/node_modules
+
+# Excluir archivos de configuración del entorno
+*.local
