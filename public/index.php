@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/global.css">
     <link rel="stylesheet" href="/styles/normalize.css">
+    <link href="../styles/global.css" rel="stylesheet">
     <title>Inicio</title>
 </head>
 
@@ -27,12 +27,11 @@
             <a href="#">Usuarios</a>
         </div>
     </nav>
-    <div class="center">
+
     <?php
         require_once(__DIR__ . '/../src/crud/consultar.php');
         generarTablaUsuarios();
     ?>
-    </div>
 </body>
 
 </html>

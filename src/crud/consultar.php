@@ -18,24 +18,27 @@ function generarTablaUsuarios()
         return;
     }
 
-    echo '<table border="1">
+    echo '<table class="w-auto m-3 rounded-md bg-rose-800 text-sm text-left rtl:text-right text-rose-100 dark:text-rose-100">
             <tr>
-                <th>ID</th>
-                <th>Nombre</th>
-                <th>Apellido Paterno</th>
-                <th>Apellido Materno</th>
-                <th>Correo</th>
-                <th>Activo</th>
+                <th class="hover:bg-rose-900 px-6 py-3">ID</th>
+                <th class="hover:bg-rose-900 px-6 py-3">Nombre</th>
+                <th class="hover:bg-rose-900 px-6 py-3">Apellido Paterno</th>
+                <th class="hover:bg-rose-900 px-6 py-3">Apellido Materno</th>
+                <th class="hover:bg-rose-900 px-6 py-3">Correo</th>
+                <th class="hover:bg-rose-900 px-6 py-3">Activo</th>
             </tr>';
 
+    $contador=0;
     foreach ($usuarios as $usuario) {
-        echo '<tr>
-                <td>' . htmlspecialchars($usuario['id']) . '</td>
-                <td>' . htmlspecialchars($usuario['nombre']) . '</td>
-                <td>' . htmlspecialchars($usuario['ap_paterno']) . '</td>
-                <td>' . htmlspecialchars($usuario['ap_materno']) . '</td>
-                <td>' . htmlspecialchars($usuario['correo']) . '</td>
-                <td>' . htmlspecialchars($usuario['activo']) . '</td>
+        $contador++;
+        $color = $contador % 2 ? "400" : "500";
+        echo '<tr class="bg-white hover:bg-rose-700 dark:bg-rose-' . $color . ' dark:border-gray-700">
+                <td class="px-6 py-3">' . htmlspecialchars($usuario['id']) . '</td>
+                <td class="px-6 py-3">' . htmlspecialchars($usuario['nombre']) . '</td>
+                <td class="px-6 py-3">' . htmlspecialchars($usuario['ap_paterno']) . '</td>
+                <td class="px-6 py-3">' . htmlspecialchars($usuario['ap_materno']) . '</td>
+                <td class="px-6 py-3">' . htmlspecialchars($usuario['correo']) . '</td>
+                <td class="px-6 py-3">' . htmlspecialchars($usuario['activo']) . '</td>
               </tr>';
     }
 
