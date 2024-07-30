@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/styles/normalize.css">
     <link href="../styles/global.css" rel="stylesheet">
-    <title>Inicio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Comparar bases de datos</title>
 </head>
 
 <body>
@@ -23,8 +24,8 @@
         </div>
 
         <div class="nav-links">
-            <a href="#">Inicio</a>
-            <a href="#">Usuarios</a>
+            <a href="./index.php">Inicio</a>
+            <a href="./comparacion.php">Comparación de DB's</a>
         </div>
     </nav>
 
